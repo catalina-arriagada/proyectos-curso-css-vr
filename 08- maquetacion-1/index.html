@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!--Fabicon: pequeño icono al lado de la pestaña:-->
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <title>Master en CSS</title>
+  </head>
+  <body>
+    <!--inicio de la cabecera-->
+    <header id="header">
+      <div id="logotipo">
+        <img src="img/logo.png" alt="logotipo" title="logotipo" />
+      </div>
+      <h1>
+        <a href="index.html">Master en CSS</a>
+      </h1>
+    </header>
+    <!--fin de la cabecera-->
+
+    <!--menu navegacion-->
+    <nav id="nav">
+      <ul>
+        <li><a href="index.hmtl">Inicio</a></li>
+        <li><a href="contenido.hmtl">Contenido</a></li>
+        <li><a href="requerimientos.hmtl">Requerimientos</a></li>
+        <li>
+          <a href="lenguajes.hmtl">Lenguajes</a>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="frameworks.hmtl">Frameworks</a>
+          <ul>
+            <li><a href="#">LESS</a></li>
+            <li><a href="#">SASS</a></li>
+            <li><a href="#">Bootstrap</a></li>
+          </ul>
+        </li>
+        <li><a href="proyectos.hmtl">Proyectos</a></li>
+        <li><a href="instructor.hmtl">El instructor</a></li>
+        <li><a href="reseñas.hmtl">Reseñas</a></li>
+        <li><a href="blog.hmtl">Blog</a></li>
+        <li><a href="contactos.hmtl">Contacto</a></li>
+      </ul>
+    </nav>
+    <!--fin navegacion-->
+    <!--inicio del contenido central-->
+    <div id="content">
+      <!--inicio de la barra lateral-->
+      <aside id="aside">
+        <div id="login" class="widget">
+          <h3>Entrar a la web</h3>
+          <form action="">
+            <label for="">Usuario:</label>
+            <input type="text" />
+
+            <label for="">Contraseña</label>
+            <input type="password" />
+
+            <input type="submit" value="Entrar" />
+          </form>
+          <a href="#">Zona de alumnos</a>
+          <a href="#">Zona del profesor</a>
+          <a href="#">Acceso a calificaciones</a>
+        </div>
+
+        <div id="login" class="widget">
+          <h3 class="blue">Aula virtual 1</h3>
+          <form action="">
+            <label for="">Nombre de usuario:</label>
+            <input type="text" />
+
+            <label for="">Contraseña</label>
+            <input type="password" />
+
+            <input type="submit" value="Entrar" />
+          </form>
+        </div>
+
+        <div id="login" class="widget">
+          <h3 class="red">Aula virtual 2</h3>
+          <form action="">
+            <label for="">Nombre de usuario:</label>
+            <input type="text" />
+
+            <label for="">Contraseña</label>
+            <input type="password" />
+
+            <input type="submit" value="Entrar" />
+          </form>
+        </div>
+
+        <div class="widget" id="login">
+          <h3>Enlaces de interés</h3>
+          <ul>
+            <li><a href="#">Máster en JavaScript</a></li>
+            <li><a href="#">Máster en PHP</a></li>
+            <li><a href="#">Máster en webs fullstack</a></li>
+            <li><a href="#">Máster en Frameworks JS</a></li>
+            <li><a href="#">Curso de Git y comandos Linux</a></li>
+            <li><a href="#">catalinarrugada.cl</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!--fin de la barra lateral-->
+    
+
+      <!--inicio secciones-->
+      <div id="sections">
+        <section id="frontend">
+          <span class="stickers">
+            <img class="stickerOne" src="img/scotch.png" alt="pegatina" />
+            <img class="stickerTwo" src="img/scotch.png" alt="pegatina" />
+          </span>
+          <h2 class="titulo">Noticias de front-end</h2>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+        </section>
+
+        <section id="instructor">
+          <span class="stickers">
+            <img class="stickerOne" src="img/scotch.png" alt="pegatina" />
+            <img class="stickerTwo" src="img/scotch.png" alt="pegatina" />
+          </span>
+          <h2 class="titulo orange">Noticias del instructor</h2>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a> 
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+        </section>
+
+        <section id="backend">
+          <span class="stickers">
+            <img class="stickerOne" src="img/scotch.png" alt="pegatina" />
+            <img class="stickerTwo" src="img/scotch.png" alt="pegatina" />
+          </span>
+          <h2 class="titulo red">Noticias de back-end</h2>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Título de la entrada</a>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+            </p>
+            <span class="date">[07-07-2022. Cata Arruga WEB]</span>
+          </article>
+        </section>
+      </div>
+      <!--fin secciones-->
+      <aside id="frase">
+        Frase del día: <br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <a href="#">Leer más frases</a>
+      </aside>
+      <div class="clearfix"></div>
+      <div id="history">
+        <a href="#">[Ver histórico de noticias]</a>
+      </div>
+    </div>
+    <!--fin del contenido central-->
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <p>&copy; Desarrollado por Catalina Arriagada WEB</p>
+        <p>Más contenido y formación de desarrollo web en <a href="#">catalinaweb-academy</a></p>
+    </footer>
+  </body>
+</html>

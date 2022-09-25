@@ -1,0 +1,162 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    }
+
+     /*EJERCICIO COMPLETO CON AREAS CSS GRID*/
+
+    #website-areas *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #website-areas {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 150px 70px 1fr 70px;
+    
+        /*areas*/
+        grid-template-areas: 
+            "cabecera cabecera cabecera cabecera cabecera" /*expande cabecera 5 veces*/
+            "menu menu menu menu menu"
+            "contenido contenido contenido contenido lateral"
+            "pie pie pie pie pie";
+
+        grid-gap: 20px; /*separacion entre elementos*/
+        /*grid-column-gap: 20px; /*espacio a nivel de columna o "row" en las row*/
+
+        width: 75%;
+        height: 1000px;
+        margin: 0px auto;
+        border: 1px solid #ccc;
+    }
+    
+    #website-areas #cabecera{
+       
+        /*nombre area:*/
+        grid-area: cabecera; 
+
+        /*centrar contenido de una caja*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /**/
+        background-color: blue;
+        color: white;
+    }
+    
+    #website-areas #menu{
+        /*nombre area:*/
+        grid-area: menu;
+
+        background-color: lightblue;
+        color: black;
+        line-height: 70px;
+    }
+    #website-areas #menu ul{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        list-style: none; /*quitar puntitos*/
+    }
+    
+    #website-areas #contenido{
+        /*nombre area:*/
+        grid-area: contenido; 
+        /*grid dentro de otro grid:*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+    
+        padding: 20px;
+    
+        background-color: #eee;
+    }
+    
+    #website-areas #contenido article{
+        background-color: #ccc;
+        border: 1px solid #555;
+    }
+    #website-areas #lateral{
+        /*nombre area:*/
+        grid-area: lateral; 
+        background-color: orange;
+        color: white;
+    }
+    
+    #website-areas #pie-pagina{
+        /*nombre area:*/
+        grid-area: pie; 
+        background-color: black;
+        color: white;
+    }
+
+
+
+    /*EJERCICIO COMPLETO*/
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#website #cabecera{
+    grid-column: 1 / 6;
+
+    /*centrar contenido de una caja*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    background-color: blue;
+    color: white;
+}
+
+#website #menu{
+    grid-column: 1 / 6;
+    background-color: lightblue;
+    color: black;
+    line-height: 70px;
+}
+#website #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none; /*quitar puntitos*/
+}
+
+#website #contenido{
+    grid-column: 1 / 5;
+    /*grid dentro de otro grid:*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+
+    padding: 20px;
+
+    background-color: #eee;
+}
+
+#website #contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+#website #lateral{
+    grid-column: 5 / 6;
+    background-color: orange;
+    color: white;
+}
+
+#website #pie-pagina{
+    grid-column: 1 / 6;
+    background-color: black;
+    color: white;
+}
